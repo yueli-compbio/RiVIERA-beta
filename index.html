@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="RiVIERA-beta : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>RiVIERA-beta</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/yueli-compbio/RiVIERA-beta">View on GitHub</a>
+
+          <h1 id="project_title">RiVIERA-beta</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/yueli-compbio/RiVIERA-beta/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/yueli-compbio/RiVIERA-beta/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="riviera-beta" class="anchor" href="#riviera-beta" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>RiVIERA-beta</h1>
+
+<p>Risk Variant Inference using Epigenomic Reference Annotation</p>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
+
+<p>RiVIERA-beta is a novel Bayesian framework to jointly model the likelihood of GWAS p-values via beta density function across multiple related disorders using large-scale reference epigenomic annotations. Briefly, the inputs to RiVIERA are: (1) GWAS associations p-values: one or more sets of p-values from multiple GWAS; (2) epigenomic reference annotations: binary or continuous annotations (or ``genome browser tracks") for each SNP that reflect their epigenomic context (i.e., histone marks, DNase I hypersensitivity, transcription factor binding, etc) in various tissues or cell lines. The goal of RiVIERA is to infer for each SNP in disease their posterior probability of disease association (PPA) using epigenomic values and to detect functional enrichments from the annotations, taking into account the underlying multi-trait epigenomic covariance.</p>
+
+<h4>
+<a id="input" class="anchor" href="#input" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Input</h4>
+
+<ol>
+<li>GWAS summary association statistics in one or more traits (p-values)</li>
+<li>Functional annotation matrix (binary or continuous) for each SNP</li>
+</ol>
+
+<h4>
+<a id="important-features" class="anchor" href="#important-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Important features</h4>
+
+<ol>
+<li>Efficient full Bayesian inference of causal SNP and causal annotations allows incorporation of large number of annotations</li>
+<li>Can model epigenomic covariance of multiple related traits (model complexity is linear to the number of traits)</li>
+</ol>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>RiVIERA-beta requires Rcpp and RcppArmadillo, which can be easily installed within R via 'install.packages' function.</p>
+
+<p>Download and install:</p>
+
+<p><code>$ git clone https://github.com/yueli-compbio/RiVIERA-beta</code></p>
+
+<p>Mac installation:</p>
+
+<p><code>$ R CMD INSTALL RiVIERA_beta_0.9.1_MacOS.tgz</code></p>
+
+<p>Linux installation:</p>
+
+<p><code>$ R CMD INSTALL RiVIERA_beta_0.9.1_Linux.tgz</code></p>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>Function manuals are described in R documents:</p>
+
+<p><code>&gt; library(RiVIERAbeta)</code></p>
+
+<p><code>&gt; ?rivieraBeta</code></p>
+
+<p>User manual with examples is written in sweave and invoked by vignette:</p>
+
+<p><code>&gt; vignette(RiVIERAbeta)</code></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">RiVIERA-beta maintained by <a href="https://github.com/yueli-compbio">yueli-compbio</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
